@@ -61,6 +61,16 @@
 .app-portal header nav ul li:hover {
   border: 1px solid #333;
 }
+.app-portal header nav ul li:hover:after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: white;
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+  z-index: 1000;
+}
 .app-portal header nav ul li:hover ul {
   display: flex;
 }
@@ -191,6 +201,11 @@
 }
 .post-feature-item .post-feature-info h3 {
   margin-top: 0;
+}
+
+.post-item {
+  display: flex;
+  flex-direction: column;
 }
 
 .title-section {

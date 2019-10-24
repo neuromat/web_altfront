@@ -56,6 +56,16 @@
                     border: 1px solid transparent;
                     &:hover{
                         border: 1px solid #333;
+                        &:after{
+                            content: '';
+                            width: 100%;
+                            height: 2px;
+                            background: white;
+                            position: absolute;
+                            bottom: 1px;
+                            left: 0;
+                            z-index: 1000;
+                        }                        
                     
                         ul{
                             display: flex;
@@ -182,6 +192,7 @@
     }
 }
 
+// POST CONTENT
 .post-feature-item{
     display: flex;
     .post-feature-image{
@@ -198,6 +209,12 @@
             margin-top: 0;
         }
     }
+}
+
+
+.post-item{
+    display: flex;
+    flex-direction: column;
 }
 
 // HEADING
