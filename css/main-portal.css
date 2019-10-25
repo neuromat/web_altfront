@@ -1,6 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 * {
   font-family: sans-serif;
   box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, p, span, a {
+  font-family: "Open Sans", sans-serif;
 }
 
 .app-portal {
@@ -157,7 +162,10 @@
 }
 .promo-banner .promo-item .description h2 {
   color: white;
+  font-size: 1.2em;
   text-align: center;
+  margin-top: 5px;
+  font-weight: bold;
 }
 .promo-banner .promo-item .description p {
   color: white;
@@ -206,12 +214,35 @@
 .post-item {
   display: flex;
   flex-direction: column;
+  width: 25%;
+  margin: 5px;
+}
+.post-item .post-image-box {
+  width: 100%;
+  height: 200px;
+}
+.post-item .post-image-box .post-image {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  background-color: #ccc;
+}
+.post-item .post-title {
+  margin-top: 12px;
+  margin-bottom: 5px;
+  padding: 0;
+  font-size: 1.4em;
 }
 
 .title-section {
   margin: 25px auto 20px auto;
   padding: 0;
   font-size: 1.5em;
+}
+
+.container-posts {
+  display: flex;
 }
 
 .debug {
