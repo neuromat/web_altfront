@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/main-portal.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">    
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <title>Document</title>
 </head>
 <body>
@@ -51,48 +52,51 @@
         </header>
 
         <main>
-  
-            <div class="promo-banner">
-                <div class="promo-item">
-                    <div class="title">
-                        <h2>Jogo do Goleiro</h2>
+            <div class="container-fluid">
+                <section class="section-default">
+                    <div class="promo-banner">
+                        <div class="promo-item">
+                            <div class="title">
+                                <h2>Jogo do Goleiro</h2>
+                            </div>
+                            <div class="description">
+                                <h2>Jogo do goleiro</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores voluptatem laborum quos et, illo quibusdam culpa eaque debitis placeat ut.</p>
+                                <button class="btn btn-primary">Saiba mais</button>
+                            </div>
+                        </div> 
+                        <div class="promo-item">
+                            <div class="title">
+                                <h2>Podcast A Matemática do Cérebro</h2>
+                            </div>
+                            <div class="description">
+                                <h2>Podcast</h2>
+                                <p>O Podcast: A Matemática do Cérebro aborda três temas principais: o modelo de sistemas de disparos neuronais desenvolvido pela equipe do CEPID NeuroMat.</p>
+                                <button class="btn btn-primary">Saiba mais</button>
+                            </div>
+                        </div> 
+                        <div class="promo-item">
+                            <div class="title">
+                                <h2>Iniciativa Wikipedia</h2>
+                            </div>
+                            <div class="description">
+                                <h2>Iniciativa Wikipedia</h2>
+                                <p>O trabalho de difusão do NeuroMat trabalha tanto em formação, quanto de comunicação. Especificamente na comunicação, o NeuroMat trabalha com o uso da Wikipédia na difusão científica.</p>
+                                <button class="btn btn-primary">Saiba mais</button>
+                            </div>
+                        </div> 
+                        <div class="promo-item">
+                            <div class="title">
+                                <h2>Transferência Tecnológica</h2>
+                            </div>
+                            <div class="description">
+                                <h2>Transferência Tecnológica</h2>
+                                <p>O eixo de transferência tecnológica do CEPID NeuroMat pauta-se pelo arcabouço conceptual e experimental desenvolvido pela equipe cientifica do NeuroMat para explicar fenômenos neurocientíficos.</p>
+                                <button class="btn btn-primary">Saiba mais</button>
+                            </div>
+                        </div> 
                     </div>
-                    <div class="description">
-                        <h2>Jogo do goleiro</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores voluptatem laborum quos et, illo quibusdam culpa eaque debitis placeat ut.</p>
-                        <button class="btn btn-primary">Saiba mais</button>
-                    </div>
-                </div> 
-                <div class="promo-item">
-                    <div class="title">
-                        <h2>Podcast A Matemática do Cérebro</h2>
-                    </div>
-                    <div class="description">
-                        <h2>Podcast</h2>
-                        <p>O Podcast: A Matemática do Cérebro aborda três temas principais: o modelo de sistemas de disparos neuronais desenvolvido pela equipe do CEPID NeuroMat.</p>
-                        <button class="btn btn-primary">Saiba mais</button>
-                    </div>
-                </div> 
-                <div class="promo-item">
-                    <div class="title">
-                        <h2>Iniciativa Wikipedia</h2>
-                    </div>
-                    <div class="description">
-                        <h2>Iniciativa Wikipedia</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores voluptatem laborum quos et, illo quibusdam culpa eaque debitis placeat ut.</p>
-                        <button class="btn btn-primary">Saiba mais</button>
-                    </div>
-                </div> 
-                <div class="promo-item">
-                    <div class="title">
-                        <h2>Transferência Tecnológica</h2>
-                    </div>
-                    <div class="description">
-                        <h2>Transferência Tecnológica</h2>
-                        <p>O eixo de transferência tecnológica do CEPID NeuroMat pauta-se pelo arcabouço conceptual e experimental desenvolvido pela equipe cientifica do NeuroMat para explicar fenômenos neurocientíficos.</p>
-                        <button class="btn btn-primary">Saiba mais</button>
-                    </div>
-                </div> 
+                </section>
             </div>
 
             <!-- <nav class="promo-menu">
@@ -104,67 +108,115 @@
                 </ul>
             </nav> -->
 
-            <div class="container-fluid">
-                <div class="col-md-9">
-                    <h2 class="title-section">Publicações</h2>
-                    <div class="post-feature-item">
-                        <div class="post-feature-image" style="background-image:url('temp/image_computer_research.jpg')"></div>
-                        <div class="post-feature-info">
-                            <h3>Title</h3>
-                            <p>O Centro de Pesquisa, Inovação e Difusão em Neuromatemática (CEPID NeuroMat) é um centro de matemática cuja missão é desenvolver a nova matemática necessária para construir uma Teoria do Cérebro, tendo em vista os dados experimentais produzidos pela neurociência.</p>
-                        </div>
+            <div class="search-box">
+                <input type="search" placeholder="Buscar conteúdo no portal" />
+                <button>Buscar</button>
+            </div>
 
+            <div class="container-fluid">
+                <section class="section-default">
+                    <div class="col-md-9">
+                        <h2 class="title-section">Publicações</h2>
+                        <div class="post-feature-item">
+                            <div class="post-feature-image" style="background-image:url('temp/numec_foto_predio.jpg')"></div>
+                            <div class="post-feature-info">
+                                <h3>Title</h3>
+                                <p>O Centro de Pesquisa, Inovação e Difusão em Neuromatemática (CEPID NeuroMat) é um centro de matemática cuja missão é desenvolver a nova matemática necessária para construir uma Teoria do Cérebro, tendo em vista os dados experimentais produzidos pela neurociência.</p>
+                            </div>
+    
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-3">
-                    <h2 class="title-section">Topic</h2>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit reiciendis autem voluptatibus culpa ex accusamus blanditiis debitis aliquid dolor soluta, dolore ut consequuntur est officia repellat explicabo natus facere enim?
-                </div>
+                    <div class="col-md-3">
+                        <div class="project-slideshow-component">
+                            <!-- CAROUSEL COMPONENT -->
+                            <div class="swiper-container">
+                                    <!-- Additional required wrapper -->
+                                    <div class="swiper-wrapper">
+                                        <!-- Slides -->
+                                        <div class="swiper-slide">
+                                            <a href="#">
+                                                <img src="temp/amparo.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#">
+                                                <img src="temp/abraco.jpg" alt="">
+                                            </a>                                            
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#">
+                                                <img src="temp/traco_ciencia.jpg" alt="">
+                                            </a>                                               
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#">
+                                                <img src="temp/nes.jpg" alt="">
+                                            </a>                                               
+                                        </div>
+                                        
+                                    </div>
+                                    <!-- If we need pagination -->
+                                    <div class="swiper-pagination"></div>
+                                
+                                    <!-- If we need navigation buttons -->
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                
+                                    <!-- If we need scrollbar -->
+                                    <!-- <div class="swiper-scrollbar"></div> -->
+                                </div>
+                            <!-- / CAROUSEL COMPONENT -->
+                        </div>
+                    </div>
+                </section>
             </div>
 
  
 
             <div class="container-fluid">
                 <hr>
-                <h3>Notícias</h3>
-                <div class="container-posts">
-                    <div class="post-item">
-                        <div class="post-image-box">
-                            <div class="post-image" style="background-image:url('temp/mock_post_image.jpg')"></div>                       
+                <section class="section-default">
+                    <h3>Notícias</h3>
+                    <div class="container-posts">
+                        <div class="post-item">
+                            <div class="post-image-box">
+                                <div class="post-image" style="background-image:url('temp/mock_post_image.jpg')"></div>                       
+                            </div>
+                            <div class="post-info">
+                                <h3 class="post-title">Title</h3>
+                                <p>The Research, Innovation and Dissemination Center for Neuromathematics (RIDC NeuroMat) has sustained an ongoing project for the development of new strategies of transcranial magneti</p>
+                            </div>
                         </div>
-                        <div class="post-info">
-                            <h3 class="post-title">Title</h3>
-                            <p>The Research, Innovation and Dissemination Center for Neuromathematics (RIDC NeuroMat) has sustained an ongoing project for the development of new strategies of transcranial magneti</p>
+                        <div class="post-item">
+                            <div class="post-image-box">
+                                <div class="post-image" style="background-image:url('temp/mock_post_image.jpg')"></div>                        
+                            </div>
+                            <div class="post-info">
+                                <h3 class="post-title">Title</h3>
+                                <p>The Research, Innovation and Dissemination Center for Neuromathematics (RIDC NeuroMat) has sustained an ongoing project for the development of new strategies of transcranial magneti</p>
+                            </div>
+                        </div>
+                        <div class="post-item">
+                            <div class="post-image-box">
+                                <div class="post-image" style="background-image:url('temp/mock_post_image.jpg')"></div>                        
+                            </div>
+                            <div class="post-info">
+                                <h3 class="post-title">Title</h3>
+                                <p>The Research, Innovation and Dissemination Center for Neuromathematics (RIDC NeuroMat) has sustained an ongoing project for the development of new strategies of transcranial magneti</p>
+                            </div>
+                        </div>
+                        <div class="post-item">
+                            <div class="post-image-box">
+                                <div class="post-image" style="background-image:url('temp/mock_post_image.jpg')"></div>                        
+                            </div>
+                            <div class="post-info">
+                                <h3 class="post-title">Title</h3>
+                                <p>The Research, Innovation and Dissemination Center for Neuromathematics (RIDC NeuroMat) has sustained an ongoing project for the development of new strategies of transcranial magneti</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="post-item">
-                        <div class="post-image-box">
-                            <div class="post-image" style="background-image:url('temp/mock_post_image.jpg')"></div>                        
-                        </div>
-                        <div class="post-info">
-                            <h3 class="post-title">Title</h3>
-                            <p>The Research, Innovation and Dissemination Center for Neuromathematics (RIDC NeuroMat) has sustained an ongoing project for the development of new strategies of transcranial magneti</p>
-                        </div>
-                    </div>
-                    <div class="post-item">
-                        <div class="post-image-box">
-                            <div class="post-image" style="background-image:url('temp/mock_post_image.jpg')"></div>                        
-                        </div>
-                        <div class="post-info">
-                            <h3 class="post-title">Title</h3>
-                            <p>The Research, Innovation and Dissemination Center for Neuromathematics (RIDC NeuroMat) has sustained an ongoing project for the development of new strategies of transcranial magneti</p>
-                        </div>
-                    </div>
-                    <div class="post-item">
-                        <div class="post-image-box">
-                            <div class="post-image" style="background-image:url('temp/mock_post_image.jpg')"></div>                        
-                        </div>
-                        <div class="post-info">
-                            <h3 class="post-title">Title</h3>
-                            <p>The Research, Innovation and Dissemination Center for Neuromathematics (RIDC NeuroMat) has sustained an ongoing project for the development of new strategies of transcranial magneti</p>
-                        </div>
-                    </div>
-                </div>
+
+                </section>
             </div>
         </main>
     </div>
@@ -177,7 +229,31 @@
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
+  <!-- Swiper -->
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script>
+        var mySwiper = new Swiper ('.swiper-container', {
+          // Optional parameters
+          direction: 'horizontal',
+          loop: true,
+      
+          // If we need pagination
+          pagination: {
+            el: '.swiper-pagination',
+          },
+      
+          // Navigation arrows
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+      
+          // And if we need scrollbar
+          scrollbar: {
+            el: '.swiper-scrollbar',
+          },
+        })
+        </script>
 
- 
 </body>
 </html>
