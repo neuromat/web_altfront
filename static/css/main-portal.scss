@@ -12,6 +12,28 @@ h1, h2, h3, h4, h5, p, span, a{
     font-family: 'Open Sans', sans-serif;
 }
 
+// HEADING
+.section-title{
+    font-size: 1.4em;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid green;
+    span{
+        position: relative;
+        &:before{
+            content: '';
+            bottom: -3px;
+            left: 0;
+            width: 120%;
+            height: 2px;
+            background-color: rgb(78, 133, 46);
+            z-index: 500;
+            position: absolute;
+        }
+    }
+}
+
 .app-portal{
     display: flex;
     flex-direction: column;
@@ -252,8 +274,9 @@ h1, h2, h3, h4, h5, p, span, a{
         width: 100px;
         height: 50px;;
         flex-grow: 0;
+        background: white;
         &:hover{
-            background: #069;
+            background: $verde-neuromat;
             color: white;
         }
     }
@@ -268,7 +291,8 @@ h1, h2, h3, h4, h5, p, span, a{
         height: 350px;
         background-size: cover;
         background-repeat: no-repeat;
-        background-color: #ccc;
+        background-color: #ccc;  
+        background-position: center;
         margin-right: 15px;
         border-radius: 3px;
     }
@@ -297,9 +321,7 @@ h1, h2, h3, h4, h5, p, span, a{
             background-color: #ccc;
             border-radius: 3px;      
         }
-        .post-info{
-            
-        }
+    
     }
     small{
         font-weight: bold;
@@ -456,19 +478,24 @@ h1, h2, h3, h4, h5, p, span, a{
             border-bottom: 1px solid #ccc;
             h2{
                 font-size: 1.3em;
+                small{
+                    font-weight: bold;
+                    color: #333;
+                    background: khaki;
+                }
             }
         }
     }
 }
 
-.podcast-button{
+.podcast-button{  
     display: flex;
     align-items: center;
     padding: 8px;
     border: 1px solid transparent;
     border-radius: 3px;
     padding-left: 110px;
-    background-image:url('../assets/podcast_cover.png');
+    background-image:url('../img/podcast_cover.png');
     background-repeat: no-repeat;
     background-size: 100px;
     background-position: 0;

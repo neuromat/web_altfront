@@ -8,6 +8,27 @@ h1, h2, h3, h4, h5, p, span, a {
   font-family: "Open Sans", sans-serif;
 }
 
+.section-title {
+  font-size: 1.4em;
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid green;
+}
+.section-title span {
+  position: relative;
+}
+.section-title span:before {
+  content: "";
+  bottom: -3px;
+  left: 0;
+  width: 120%;
+  height: 2px;
+  background-color: #4e852e;
+  z-index: 500;
+  position: absolute;
+}
+
 .app-portal {
   display: flex;
   flex-direction: column;
@@ -238,9 +259,10 @@ h1, h2, h3, h4, h5, p, span, a {
   width: 100px;
   height: 50px;
   flex-grow: 0;
+  background: white;
 }
 .search-box button:hover {
-  background: #069;
+  background: #2dc450;
   color: white;
 }
 
@@ -253,6 +275,7 @@ h1, h2, h3, h4, h5, p, span, a {
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #ccc;
+  background-position: center;
   margin-right: 15px;
   border-radius: 3px;
 }
@@ -422,6 +445,11 @@ h1, h2, h3, h4, h5, p, span, a {
 .newsletter-box ul li h2 {
   font-size: 1.3em;
 }
+.newsletter-box ul li h2 small {
+  font-weight: bold;
+  color: #333;
+  background: khaki;
+}
 
 .podcast-button {
   display: flex;
@@ -430,7 +458,7 @@ h1, h2, h3, h4, h5, p, span, a {
   border: 1px solid transparent;
   border-radius: 3px;
   padding-left: 110px;
-  background-image: url("../assets/podcast_cover.png");
+  background-image: url("../img/podcast_cover.png");
   background-repeat: no-repeat;
   background-size: 100px;
   background-position: 0;
