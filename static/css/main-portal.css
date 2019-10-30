@@ -42,6 +42,7 @@ h1, h2, h3, h4, h5, p, span, a {
   margin: auto;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 .app-portal header .logo {
   width: 200px;
@@ -53,6 +54,7 @@ h1, h2, h3, h4, h5, p, span, a {
 }
 .app-portal header nav {
   width: 70%;
+  margin-right: 160px;
 }
 .app-portal header nav ul {
   list-style: none;
@@ -131,6 +133,26 @@ h1, h2, h3, h4, h5, p, span, a {
   background: #f3f3f3;
   border: 1px solid transparent;
 }
+.app-portal header .fapesp-apoio {
+  width: 150px;
+  height: 65px;
+  background-image: url("http://www.sbgea.org.br/wp-content/uploads/2019/08/FAPESP_LOGO.png");
+  background-size: 65%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  position: absolute;
+  top: 0px;
+  right: 0;
+}
+.app-portal header .fapesp-apoio span {
+  position: absolute;
+  font-size: 0.8em;
+  font-weight: bold;
+  padding-left: 10px;
+  top: 12px;
+  left: 20px;
+  color: #069;
+}
 
 .section-default {
   width: 80%;
@@ -183,7 +205,7 @@ h1, h2, h3, h4, h5, p, span, a {
   margin: 0;
   padding: 0;
 }
-@media only screen and (min-width : 1224px) {
+@media only screen and (min-width : 1224px) and (max-width: 1824px) {
   .promo-banner .promo-item .title h2 {
     font-size: 1.2em;
   }
@@ -478,7 +500,7 @@ h1, h2, h3, h4, h5, p, span, a {
   flex-grow: 0;
   flex-shrink: 0;
 }
-@media only screen and (min-width : 1224px) {
+@media only screen and (min-width : 1224px) and (max-width: 1824px) {
   .podcast-button {
     font-size: 1em;
     background-size: 70px;
@@ -550,7 +572,7 @@ footer {
   background: #020024;
   background: linear-gradient(90deg, black 42%, rgba(0, 0, 0, 0) 100%);
 }
-@media only screen and (min-width : 1224px) {
+@media only screen and (min-width : 1224px) and (max-width: 1824px) {
   .slide .slide-info {
     background: linear-gradient(90deg, black 48%, rgba(0, 0, 0, 0) 100%);
   }
@@ -563,7 +585,13 @@ footer {
   padding-bottom: 0;
   min-height: 130px;
 }
-@media only screen and (min-width : 1224px) {
+@media only screen and (min-width : 1824px) {
+  .slide .slide-info .slide-title {
+    font-size: 0.35em;
+    line-height: 54px;
+  }
+}
+@media only screen and (min-width : 1224px) and (max-width: 1824px) {
   .slide .slide-info .slide-title {
     font-size: 0.25em;
     line-height: 35px;
@@ -585,30 +613,34 @@ footer {
 .button {
   width: 30px;
   height: 30px;
-  border-top: 2px solid black;
+  border-top: 4px solid black;
   position: absolute;
   top: 50%;
   cursor: pointer;
+  border-color: #2e742e !important;
+  opacity: 0.5;
 }
 
 .prev {
-  border-left: 2px solid black;
+  border-left: 4px solid black;
   left: 5%;
   transform: rotate(-45deg);
   z-index: 8500;
 }
 .prev:hover {
   border-color: #2dc450;
+  opacity: 1;
 }
 
 .next {
-  border-right: 2px solid black;
+  border-right: 4px solid black;
   right: 5%;
   transform: rotate(45deg);
   z-index: 8500;
 }
 .next:hover {
   border-color: #2dc450;
+  opacity: 1;
 }
 
 /*# sourceMappingURL=main-portal.css.map */
