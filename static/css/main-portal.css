@@ -183,6 +183,11 @@ h1, h2, h3, h4, h5, p, span, a {
   margin: 0;
   padding: 0;
 }
+@media only screen and (min-width : 1224px) {
+  .promo-banner .promo-item .title h2 {
+    font-size: 1.2em;
+  }
+}
 .promo-banner .promo-item .description {
   display: none;
   flex-direction: column;
@@ -472,6 +477,14 @@ h1, h2, h3, h4, h5, p, span, a {
   margin-top: 30px;
   flex-grow: 0;
   flex-shrink: 0;
+}
+@media only screen and (min-width : 1224px) {
+  .podcast-button {
+    font-size: 1em;
+    background-size: 70px;
+    margin-top: 10px;
+    height: 70px;
+  }
 }
 .podcast-button:hover {
   border: 1px solid #2dc450;
