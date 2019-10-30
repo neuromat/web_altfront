@@ -60,6 +60,7 @@ h1, h2, h3, h4, h5, p, span, a {
   display: flex;
   justify-content: flex-end;
   font-size: 1em;
+  z-index: 9999;
 }
 .app-portal header nav ul li.social-media-link {
   margin-left: 0;
@@ -95,7 +96,7 @@ h1, h2, h3, h4, h5, p, span, a {
   position: absolute;
   bottom: 1px;
   left: 0;
-  z-index: 1000;
+  z-index: 99000;
 }
 .app-portal header nav ul li:hover ul {
   display: flex;
@@ -490,6 +491,87 @@ footer {
 
 .debug {
   border: 1px solid red;
+}
+
+.slider-wrapper {
+  width: 100%;
+  height: 380px;
+  background: #000;
+  overflow: hidden;
+  position: relative;
+}
+
+.inner-wrapper {
+  width: 500%;
+  height: 100%;
+  position: relative;
+  left: -100%;
+}
+
+.slide {
+  width: calc(100%/5);
+  height: 100%;
+  background: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  font-weight: 700;
+  float: left;
+  position: relative;
+}
+.slide .slide-info {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 380px;
+  position: absolute;
+  z-index: 8000;
+  padding: 40px;
+  background: #020024;
+  background: linear-gradient(90deg, black 42%, rgba(0, 0, 0, 0) 100%);
+}
+.slide .slide-info .slide-title {
+  color: white;
+  font-size: 0.4em;
+  width: 50%;
+  line-height: 54px;
+  padding-bottom: 0;
+}
+.slide .slide-info button {
+  min-width: 200px;
+  padding: 8px;
+  font-size: 18px;
+  border: none;
+  border-radius: 4px;
+  margin-left: 20px;
+}
+.slide .slide-info button:hover {
+  background: #2dc450;
+  color: white;
+}
+
+.button {
+  width: 30px;
+  height: 30px;
+  border-top: 2px solid black;
+  position: absolute;
+  cursor: pointer;
+  top: 50%;
+}
+
+.prev {
+  border-left: 2px solid black;
+  left: 5%;
+  transform: rotate(-45deg);
+  z-index: 8500;
+}
+
+.next {
+  border-right: 2px solid black;
+  right: 5%;
+  transform: rotate(45deg);
+  z-index: 8500;
 }
 
 /*# sourceMappingURL=main-portal.css.map */
