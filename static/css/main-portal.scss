@@ -564,7 +564,6 @@ footer{
     float: left;
     position: relative;
     
-    
     .slide-info{
         top:0;
         left: 0;
@@ -577,7 +576,7 @@ footer{
         background: linear-gradient(90deg, rgba(0,0,0,1) 42%, rgba(0,0,0,0) 100%);        
         .slide-title{
             color: white;
-            font-size: 0.4em;
+            font-size: 0.35em;
             width: 50%;
             line-height: 54px;
             padding-bottom: 0;
@@ -602,9 +601,8 @@ footer{
     height: 30px;
     border-top: 2px solid black;
     position: absolute;
-    cursor: pointer;
     top: 50%;
-  
+    cursor: pointer;
   }
   
   .prev {
@@ -612,6 +610,9 @@ footer{
     left: 5%;
     transform: rotate(-45deg);
     z-index: 8500;
+    &:hover{
+        border-color: $verde-neuromat;
+    }    
   }
   
   .next {
@@ -619,5 +620,8 @@ footer{
     right: 5%;
     transform: rotate(45deg);
     z-index: 8500;
+    &:hover{
+        border-color: $verde-neuromat;
+    }       
   }
   

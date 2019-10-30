@@ -533,7 +533,7 @@ footer {
 }
 .slide .slide-info .slide-title {
   color: white;
-  font-size: 0.4em;
+  font-size: 0.35em;
   width: 50%;
   line-height: 54px;
   padding-bottom: 0;
@@ -556,8 +556,8 @@ footer {
   height: 30px;
   border-top: 2px solid black;
   position: absolute;
-  cursor: pointer;
   top: 50%;
+  cursor: pointer;
 }
 
 .prev {
@@ -566,12 +566,18 @@ footer {
   transform: rotate(-45deg);
   z-index: 8500;
 }
+.prev:hover {
+  border-color: #2dc450;
+}
 
 .next {
   border-right: 2px solid black;
   right: 5%;
   transform: rotate(45deg);
   z-index: 8500;
+}
+.next:hover {
+  border-color: #2dc450;
 }
 
 /*# sourceMappingURL=main-portal.css.map */
