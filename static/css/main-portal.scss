@@ -200,8 +200,7 @@ $mq-large-screens: "only screen and (min-width : 1824px)";
         border: 0.5px solid white;
         background-size: cover;
         background-position: center;
-        background-color: transparent;
-        
+        background-color: transparent;        
         &:hover{
             border: 0.5px solid $verde-neuromat;
             .title{
@@ -227,6 +226,9 @@ $mq-large-screens: "only screen and (min-width : 1824px)";
                 text-align: center;
                 margin: 0;
                 padding: 0;
+                @media #{$mq-desktops-laptops}{
+                    font-size: 1.2em;
+                }     
             }
         }
 
@@ -552,6 +554,14 @@ $mq-large-screens: "only screen and (min-width : 1824px)";
     margin-top: 30px;
     flex-grow: 0;
     flex-shrink: 0;
+
+    @media #{$mq-desktops-laptops}{
+        font-size: 1em;
+        background-size: 70px;
+        margin-top: 10px;
+        height: 70px;
+    }     
+
     &:hover{
         border: 1px solid $verde-neuromat;
     }
