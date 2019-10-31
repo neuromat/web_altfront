@@ -44,6 +44,11 @@ h1, h2, h3, h4, h5, p, span, a {
   justify-content: space-between;
   position: relative;
 }
+@media only screen and (min-width : 320px) and (max-width : 1024px) {
+  .app-portal header {
+    display: none;
+  }
+}
 .app-portal header .logo {
   width: 200px;
   height: 80px;
@@ -163,6 +168,17 @@ h1, h2, h3, h4, h5, p, span, a {
   width: 80%;
   margin: auto;
 }
+@media only screen and (min-width : 320px) and (max-width : 1024px) {
+  .section-default {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width : 320px) and (max-width : 1024px) {
+  .container-paralax {
+    display: none !important;
+  }
+}
 
 .promo-banner {
   width: 100%;
@@ -171,6 +187,11 @@ h1, h2, h3, h4, h5, p, span, a {
   background: transparent;
   display: flex;
   box-shadow: 4px 4px 10px black;
+}
+@media only screen and (min-width : 320px) and (max-width : 1024px) {
+  .promo-banner {
+    display: none;
+  }
 }
 .promo-banner .promo-item {
   display: flex;
@@ -267,17 +288,30 @@ h1, h2, h3, h4, h5, p, span, a {
   align-items: center;
   background: #f7f7ea;
   padding: 40px auto;
-  border-bottom: 1px solid #888830;
+  border-bottom: 1px solid #ddd;
+  margin-top: 0;
+}
+@media only screen and (min-width : 320px) and (max-width : 1024px) {
+  .search-box {
+    margin-top: 0;
+  }
 }
 .search-box input {
   outline: none;
   align-self: center;
   border: 1px solid #ddd;
   padding: 8px;
-  font-size: 1.4em;
+  font-size: 1.2em;
   width: 50%;
   height: 50px;
   flex-grow: 0;
+}
+@media only screen and (min-width : 320px) and (max-width : 1024px) {
+  .search-box input {
+    width: 70%;
+    height: 40px;
+    font-size: 1.2em;
+  }
 }
 .search-box input::placeholder {
   font-size: 0.9em;
@@ -294,6 +328,12 @@ h1, h2, h3, h4, h5, p, span, a {
   height: 50px;
   flex-grow: 0;
   background: white;
+  cursor: pointer;
+}
+@media only screen and (min-width : 320px) and (max-width : 1024px) {
+  .search-box button {
+    height: 40px;
+  }
 }
 .search-box button:hover {
   background: #2dc450;
@@ -302,6 +342,11 @@ h1, h2, h3, h4, h5, p, span, a {
 
 .post-feature-item {
   display: flex;
+}
+@media only screen and (min-width : 320px) and (max-width : 1024px) {
+  .post-feature-item {
+    flex-direction: column;
+  }
 }
 .post-feature-item .post-feature-image {
   width: 45%;
@@ -313,13 +358,18 @@ h1, h2, h3, h4, h5, p, span, a {
   margin-right: 15px;
   border-radius: 3px;
 }
-@media only screen and (min-width : 1224px) and (max-width: 1824px) {
+@media only screen and (min-width : 320px) and (max-width : 1024px) {
   .post-feature-item .post-feature-image {
-    width: 55%;
+    display: none;
   }
 }
 .post-feature-item .post-feature-info {
   width: 70%;
+}
+@media only screen and (min-width : 320px) and (max-width : 1024px) {
+  .post-feature-item .post-feature-info {
+    width: 100%;
+  }
 }
 .post-feature-item .post-feature-info h3 {
   margin-top: 0;
@@ -330,6 +380,11 @@ h1, h2, h3, h4, h5, p, span, a {
   flex-direction: column;
   width: 25%;
   margin: 5px;
+}
+@media only screen and (min-width : 320px) and (max-width : 1024px) {
+  .post-item {
+    width: 100%;
+  }
 }
 .post-item .post-image-box {
   width: 100%;
@@ -342,6 +397,10 @@ h1, h2, h3, h4, h5, p, span, a {
   background-position: center;
   background-color: #ccc;
   border-radius: 3px;
+  transition: opacity ease 0.4s;
+}
+.post-item .post-image-box .post-image:hover {
+  opacity: 0.8;
 }
 .post-item small {
   font-weight: bold;
@@ -411,6 +470,11 @@ h1, h2, h3, h4, h5, p, span, a {
   padding: 4px 6px;
   font-size: 1em;
 }
+@media only screen and (min-width : 320px) and (max-width : 1024px) {
+  .newsletter-lead input {
+    width: 65%;
+  }
+}
 .newsletter-lead button {
   width: 100px;
   height: 34px;
@@ -466,12 +530,40 @@ h1, h2, h3, h4, h5, p, span, a {
   margin-top: 10px;
 }
 
+@media only screen and (min-width : 320px) and (max-width : 1024px) {
+  .facebook-like-btn-box {
+    display: none;
+  }
+}
+
+@media only screen and (min-width : 320px) and (max-width : 1024px) {
+  .desktop-only {
+    display: none;
+  }
+}
+
+@media only screen and (min-width : 1224px) and (max-width: 1824px) {
+  .mobile-only {
+    display: none;
+  }
+}
+@media only screen and (min-width : 1824px) {
+  .mobile-only {
+    display: none;
+  }
+}
+
 .facebook-like-btn-box {
   margin-top: 20px;
 }
 
 .container-posts {
   display: flex;
+}
+@media only screen and (min-width : 320px) and (max-width : 1024px) {
+  .container-posts {
+    flex-direction: column;
+  }
 }
 
 .container-paralax {
@@ -539,7 +631,7 @@ footer {
   margin-top: 50px;
 }
 
-.container-fluid {
+.container-fluid--spacer {
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -605,6 +697,13 @@ footer {
   padding-bottom: 0;
   min-height: 130px;
 }
+@media only screen and (min-width : 320px) and (max-width : 1024px) {
+  .slide .slide-info .slide-title {
+    font-size: 0.2em;
+    line-height: 34px;
+    width: 70%;
+  }
+}
 @media only screen and (min-width : 1824px) {
   .slide .slide-info .slide-title {
     font-size: 0.35em;
@@ -618,6 +717,9 @@ footer {
   }
 }
 .slide .slide-info button {
+  position: absolute;
+  left: 35px;
+  bottom: 40px;
   min-width: 200px;
   padding: 8px;
   font-size: 18px;
@@ -643,7 +745,7 @@ footer {
 
 .prev {
   border-left: 4px solid black;
-  left: 5%;
+  left: 3%;
   transform: rotate(-45deg);
   z-index: 8500;
 }
@@ -654,7 +756,7 @@ footer {
 
 .next {
   border-right: 4px solid black;
-  right: 5%;
+  right: 3%;
   transform: rotate(45deg);
   z-index: 8500;
 }
