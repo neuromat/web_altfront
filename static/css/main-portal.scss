@@ -307,7 +307,9 @@ $mq-large-screens: "only screen and (min-width : 1824px)";
     background: #f7f7ea;
     padding: 40px auto;
     border-bottom: 1px solid rgb(136, 136, 48);
-
+    @media #{$mq-smartphones-portrait-landscape}{
+        margin-top: 0;
+    }
     input{
         outline: none;
         align-self: center;
@@ -317,6 +319,11 @@ $mq-large-screens: "only screen and (min-width : 1824px)";
         width: 50%;
         height: 50px;
         flex-grow: 0;
+        @media #{$mq-smartphones-portrait-landscape}{
+            width: 70%;
+            height: 40px;
+            font-size: 1.2em;
+         }          
         &::placeholder{
             font-size: 0.9em;
         }
@@ -334,6 +341,9 @@ $mq-large-screens: "only screen and (min-width : 1824px)";
         height: 50px;;
         flex-grow: 0;
         background: white;
+        @media #{$mq-smartphones-portrait-landscape}{
+            height: 40px;
+        }        
         &:hover{
             background: $verde-neuromat;
             color: white;
@@ -470,6 +480,9 @@ $mq-large-screens: "only screen and (min-width : 1824px)";
         height: 35px;
         padding: 4px 6px;
         font-size: 1em;
+        @media #{$mq-smartphones-portrait-landscape}{
+            width: 65%;
+        }
     }
     button{
         width: 100px;
@@ -637,7 +650,7 @@ footer{
  
 .container-fluid--spacer{ 
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 30px;   
 }
 
 // DEBUG TEMP
@@ -699,6 +712,12 @@ footer{
             padding-bottom: 0;
             min-height: 130px;
 
+            @media #{$mq-smartphones-portrait-landscape}{
+                font-size: 0.20em;
+                line-height: 34px;
+                width: 70%;
+            }   
+
             @media #{$mq-large-screens}{
                 font-size: 0.35em;
                 line-height: 54px;
@@ -707,7 +726,7 @@ footer{
             @media #{$mq-desktops-laptops}{
                 font-size: 0.25em;
                 line-height: 35px;
-            }               
+            }          
         }
         button{
             min-width: 200px;
