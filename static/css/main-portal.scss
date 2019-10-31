@@ -2,34 +2,27 @@
 
 // COLORS
 $verde-neuromat: #2dc450;
+$color-link-footer: white;
 
 *{
     font-family: sans-serif;
     box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, p, span, a{
+// HEADING
+
+h1, h2, h3, h4, h5, p, span, a, button{
     font-family: 'Open Sans', sans-serif;
 }
 
-// BREAKPOINTS . MEDIA QUERIES
-
-// Smartphones
-$mq-smartphones-portrait-landscape: "only screen and (min-width : 320px) and (max-width : 1024px)";
-
-$mq-smartphones-portrait: "only screen and (max-width : 320px)";
-$mq-smartphones-landscape: "only screen and (min-width : 321px)";
-
-// iPads
-$mq-ipads-portrait-landscape: "only screen and (min-device-width : 768px) and (max-device-width : 1024px)";
-$mq-ipads-portrait: "only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait)";
-$mq-ipads-landscape: "only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape)";
-
-// Large Screens
-$mq-desktops-laptops: "only screen and (min-width : 1224px) and (max-width: 1824px)";
-$mq-large-screens: "only screen and (min-width : 1824px)";
-
 // HEADING
+
+.title-section{
+    margin: 25px auto 20px auto;
+    padding: 0;
+    font-size: 1.5em;
+}
+
 .section-title{
     font-size: 1.4em;
     margin-top: 0;
@@ -51,6 +44,24 @@ $mq-large-screens: "only screen and (min-width : 1824px)";
     }
 }
 
+// BREAKPOINTS . MEDIA QUERIES ***
+
+// Smartphones
+$mq-smartphones-portrait-landscape: "only screen and (min-width : 320px) and (max-width : 1024px)";
+
+$mq-smartphones-portrait: "only screen and (max-width : 320px)";
+$mq-smartphones-landscape: "only screen and (min-width : 321px)";
+
+// iPads
+$mq-ipads-portrait-landscape: "only screen and (min-device-width : 768px) and (max-device-width : 1024px)";
+$mq-ipads-portrait: "only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait)";
+$mq-ipads-landscape: "only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape)";
+
+// Large Screens
+$mq-desktops-laptops: "only screen and (min-width : 1224px) and (max-width: 1824px)";
+$mq-large-screens: "only screen and (min-width : 1824px)";
+
+// MAIN STYLES
 .app-portal{
     display: flex;
     flex-direction: column;
@@ -464,12 +475,7 @@ $mq-large-screens: "only screen and (min-width : 1824px)";
     }
 }
 
-// HEADING
-.title-section{
-    margin: 25px auto 20px auto;
-    padding: 0;
-    font-size: 1.5em;
-}
+
 
 // NEWSLETTER
 .newsletter-lead{
@@ -512,6 +518,7 @@ $mq-large-screens: "only screen and (min-width : 1824px)";
     margin-top: 15px;
 }
 
+
 // LAST EVENTS
 .last-events{
     margin-top: 10px;
@@ -544,7 +551,6 @@ $mq-large-screens: "only screen and (min-width : 1824px)";
 }
 
 // MISC
-
 .facebook-like-btn-box{
     @media #{$mq-smartphones-portrait-landscape}{
         display: none; 
@@ -639,26 +645,129 @@ $mq-large-screens: "only screen and (min-width : 1824px)";
 
 // FOOTER
 footer{
+    display: flex;
+    flex-direction: column;
     width: 100%;
     min-height: 200px;
     background: #333;
-    margin-top: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    .license{
+        color: #ccc;
+        border-top: 1px solid #ccc;
+        padding-top: 15px;
+    }
+    .footer-info{
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: 20px auto;
+        @media #{$mq-smartphones-portrait-landscape}{
+            width: 100%;
+        }  
+
+        .marcas-footer{
+            display: flex;
+            justify-content: space-between;
+            width: 400px;
+            .marca-apoio{
+                width: 180px;
+                display: flex;
+                flex-direction: column;
+                span{
+                    color: white;
+                }
+                img{
+                    width: 70%;
+                }
+            }
+            .marca-apoio.localizacao{
+                span{
+                    margin-bottom: 5px;
+                }
+                img{
+                    width: 35%;
+                }
+            }
+        }
+
+        .address-info{
+            h3{
+                font-size: 1.1em;
+                color: white;
+                margin: 0;
+                padding-top: 3px;
+            }
+            ul{
+                list-style: none;
+                padding: 0;
+                li{
+                    color: white;
+                    margin: 0;
+                    h4{
+                        font-size: 1em;
+                        margin-bottom: 0;
+                        a{
+                            color: $color-link-footer;
+                        }
+                       
+                    }
+                    p{
+                        margin: 0; padding: 0;
+                        font-size: 0.95em;
+                        a{
+                            color: $color-link-footer;
+                        }
+                    }
+                }
+            }
+        }
+
+        ul.sitemap-tree{
+            display: flex;
+            list-style: none;
+            padding-left: 0;
+            li{
+                margin-left: 30px;
+                a{
+                    color: white;
+                    font-size: 1.1em;
+                }
+                ul{
+                    margin-top: 15px;
+                    margin-left: 5px;
+                    padding: 0;
+                    li{
+                        margin-bottom: 5px;
+                        margin-left: 5px;
+                        a{
+                            font-size: 0.9em;
+                        }
+                    }
+                }
+            }
+
+            li.social-media-list{
+                span{
+                    color: white;
+                    font-size: 1.1em;
+                }
+                i{
+                    margin-right: 4px;
+                }
+            }
+        }
+
+    }
 }
 
-
 // OVERIDES
- 
 .container-fluid--spacer{ 
     padding-top: 30px;
     padding-bottom: 30px;   
 }
 
-// DEBUG TEMP
-.debug{
-    border: 1px solid red;
-}
-
-//VENDOR
+// SLIDESHOW COMPONENT
 .slider-wrapper {
     width: 100%;
     height: 380px;
@@ -777,5 +886,5 @@ footer{
         border-color: $verde-neuromat;
         opacity: 1;
     }       
-  }
+}
   
