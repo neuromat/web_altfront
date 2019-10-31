@@ -257,6 +257,7 @@ h1, h2, h3, h4, h5, p, span, a {
   align-items: center;
   background: #f7f7ea;
   padding: 40px auto;
+  border-bottom: 1px solid #888830;
 }
 .search-box input {
   outline: none;
@@ -443,6 +444,10 @@ h1, h2, h3, h4, h5, p, span, a {
 }
 .last-events ul p {
   margin-top: 10px;
+}
+
+.facebook-like-btn-box {
+  margin-top: 20px;
 }
 
 .container-posts {

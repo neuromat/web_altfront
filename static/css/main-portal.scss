@@ -286,7 +286,8 @@ $mq-large-screens: "only screen and (min-width : 1824px)";
     align-items: center;
     background: #f7f7ea;
     padding: 40px auto;
-    
+    border-bottom: 1px solid rgb(136, 136, 48);
+
     input{
         outline: none;
         align-self: center;
@@ -495,6 +496,11 @@ $mq-large-screens: "only screen and (min-width : 1824px)";
 }
 
 // MISC
+
+.facebook-like-btn-box{
+    margin-top: 20px;
+}
+
 .container-posts{
     display: flex;
 }
