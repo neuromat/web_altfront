@@ -339,6 +339,9 @@ $mq-large-screens: "only screen and (min-width : 1824px)";
         background-position: center;
         margin-right: 15px;
         border-radius: 3px;
+        @media #{$mq-desktops-laptops}{
+            width: 55%;
+        }             
     }
     .post-feature-info{
         width: 70%;
@@ -365,7 +368,6 @@ $mq-large-screens: "only screen and (min-width : 1824px)";
             background-color: #ccc;
             border-radius: 3px;      
         }
-    
     }
     small{
         font-weight: bold;

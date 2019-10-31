@@ -313,6 +313,11 @@ h1, h2, h3, h4, h5, p, span, a {
   margin-right: 15px;
   border-radius: 3px;
 }
+@media only screen and (min-width : 1224px) and (max-width: 1824px) {
+  .post-feature-item .post-feature-image {
+    width: 55%;
+  }
+}
 .post-feature-item .post-feature-info {
   width: 70%;
 }
