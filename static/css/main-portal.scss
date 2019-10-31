@@ -15,7 +15,8 @@ h1, h2, h3, h4, h5, p, span, a{
 // BREAKPOINTS . MEDIA QUERIES
 
 // Smartphones
-$mq-smartphones-portrait-landscape: "only screen and (min-device-width : 320px) and (max-device-width : 480px)";
+$mq-smartphones-portrait-landscape: "only screen and (min-width : 320px) and (max-width : 1024px)";
+
 $mq-smartphones-portrait: "only screen and (max-width : 320px)";
 $mq-smartphones-landscape: "only screen and (min-width : 321px)";
 
@@ -65,6 +66,9 @@ $mq-large-screens: "only screen and (min-width : 1824px)";
         align-items: center;
         justify-content: space-between;
         position: relative;
+        @media #{$mq-smartphones-portrait-landscape}{
+            display: none;
+        }        
         .logo{
             width: 200px;
             height: 80px;
@@ -184,6 +188,15 @@ $mq-large-screens: "only screen and (min-width : 1824px)";
 .section-default{
     width: 80%;
     margin: auto;
+    @media #{$mq-smartphones-portrait-landscape}{
+        width: 100%;
+    }    
+}
+
+.container-paralax{
+    @media #{$mq-smartphones-portrait-landscape}{
+        display: none !important;
+    }
 }
 
 .promo-banner{
@@ -193,6 +206,9 @@ $mq-large-screens: "only screen and (min-width : 1824px)";
     background: transparent;
     display: flex;
     box-shadow: 4px 4px 10px black;
+    @media #{$mq-smartphones-portrait-landscape}{
+        display: none;;
+     }   
     .promo-item{
         display: flex;
         justify-content: center;
@@ -203,7 +219,7 @@ $mq-large-screens: "only screen and (min-width : 1824px)";
         border: 0.5px solid white;
         background-size: cover;
         background-position: center;
-        background-color: transparent;        
+        background-color: transparent;
         &:hover{
             border: 0.5px solid $verde-neuromat;
             .title{
@@ -212,8 +228,7 @@ $mq-large-screens: "only screen and (min-width : 1824px)";
             .description{
                 display: flex;
             }
-        }
-        
+        }  
         .title{
             display: flex;
             justify-content: center;
@@ -330,6 +345,9 @@ $mq-large-screens: "only screen and (min-width : 1824px)";
 // POST CONTENT
 .post-feature-item{
     display: flex;
+    @media #{$mq-smartphones-portrait-landscape}{
+        flex-direction: column;
+    }    
     .post-feature-image{
         width: 45%;
         height: 350px;
@@ -339,9 +357,15 @@ $mq-large-screens: "only screen and (min-width : 1824px)";
         background-position: center;
         margin-right: 15px;
         border-radius: 3px;
+        @media #{$mq-smartphones-portrait-landscape}{
+            display: none;
+        }
     }
     .post-feature-info{
         width: 70%;
+        @media #{$mq-smartphones-portrait-landscape}{
+            width: 100%;
+        }        
         h3{
             margin-top: 0;
         }
@@ -354,6 +378,9 @@ $mq-large-screens: "only screen and (min-width : 1824px)";
     flex-direction: column; 
     width: 25%;
     margin: 5px;
+    @media #{$mq-smartphones-portrait-landscape}{
+        width: 100%;
+     }        
     .post-image-box{
         width: 100%;
         height: 200px;
@@ -506,11 +533,35 @@ $mq-large-screens: "only screen and (min-width : 1824px)";
 // MISC
 
 .facebook-like-btn-box{
+    @media #{$mq-smartphones-portrait-landscape}{
+        display: none; 
+    }     
+}
+
+.desktop-only{
+    @media #{$mq-smartphones-portrait-landscape}{
+        display: none; 
+    }    
+}
+
+.mobile-only{
+    @media #{$mq-desktops-laptops}{
+        display: none; 
+    } 
+    @media #{$mq-large-screens}{
+        display: none; 
+    } 
+}
+
+.facebook-like-btn-box{
     margin-top: 20px;
 }
 
 .container-posts{
     display: flex;
+    @media #{$mq-smartphones-portrait-landscape}{
+        flex-direction: column;
+     }    
 }
 
 .container-paralax{
@@ -583,11 +634,11 @@ footer{
 
 
 // OVERIDES
-.container-fluid{
+ 
+.container-fluid--spacer{ 
     padding-top: 30px;
     padding-bottom: 30px;
 }
-
 
 // DEBUG TEMP
 .debug{

@@ -44,6 +44,11 @@ h1, h2, h3, h4, h5, p, span, a {
   justify-content: space-between;
   position: relative;
 }
+@media only screen and (min-width : 320px) and (max-width : 1024px) {
+  .app-portal header {
+    display: none;
+  }
+}
 .app-portal header .logo {
   width: 200px;
   height: 80px;
@@ -163,6 +168,17 @@ h1, h2, h3, h4, h5, p, span, a {
   width: 80%;
   margin: auto;
 }
+@media only screen and (min-width : 320px) and (max-width : 1024px) {
+  .section-default {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width : 320px) and (max-width : 1024px) {
+  .container-paralax {
+    display: none !important;
+  }
+}
 
 .promo-banner {
   width: 100%;
@@ -171,6 +187,11 @@ h1, h2, h3, h4, h5, p, span, a {
   background: transparent;
   display: flex;
   box-shadow: 4px 4px 10px black;
+}
+@media only screen and (min-width : 320px) and (max-width : 1024px) {
+  .promo-banner {
+    display: none;
+  }
 }
 .promo-banner .promo-item {
   display: flex;
@@ -303,6 +324,11 @@ h1, h2, h3, h4, h5, p, span, a {
 .post-feature-item {
   display: flex;
 }
+@media only screen and (min-width : 320px) and (max-width : 1024px) {
+  .post-feature-item {
+    flex-direction: column;
+  }
+}
 .post-feature-item .post-feature-image {
   width: 45%;
   height: 350px;
@@ -313,8 +339,18 @@ h1, h2, h3, h4, h5, p, span, a {
   margin-right: 15px;
   border-radius: 3px;
 }
+@media only screen and (min-width : 320px) and (max-width : 1024px) {
+  .post-feature-item .post-feature-image {
+    display: none;
+  }
+}
 .post-feature-item .post-feature-info {
   width: 70%;
+}
+@media only screen and (min-width : 320px) and (max-width : 1024px) {
+  .post-feature-item .post-feature-info {
+    width: 100%;
+  }
 }
 .post-feature-item .post-feature-info h3 {
   margin-top: 0;
@@ -325,6 +361,11 @@ h1, h2, h3, h4, h5, p, span, a {
   flex-direction: column;
   width: 25%;
   margin: 5px;
+}
+@media only screen and (min-width : 320px) and (max-width : 1024px) {
+  .post-item {
+    width: 100%;
+  }
 }
 .post-item .post-image-box {
   width: 100%;
@@ -461,12 +502,40 @@ h1, h2, h3, h4, h5, p, span, a {
   margin-top: 10px;
 }
 
+@media only screen and (min-width : 320px) and (max-width : 1024px) {
+  .facebook-like-btn-box {
+    display: none;
+  }
+}
+
+@media only screen and (min-width : 320px) and (max-width : 1024px) {
+  .desktop-only {
+    display: none;
+  }
+}
+
+@media only screen and (min-width : 1224px) and (max-width: 1824px) {
+  .mobile-only {
+    display: none;
+  }
+}
+@media only screen and (min-width : 1824px) {
+  .mobile-only {
+    display: none;
+  }
+}
+
 .facebook-like-btn-box {
   margin-top: 20px;
 }
 
 .container-posts {
   display: flex;
+}
+@media only screen and (min-width : 320px) and (max-width : 1024px) {
+  .container-posts {
+    flex-direction: column;
+  }
 }
 
 .container-paralax {
@@ -534,7 +603,7 @@ footer {
   margin-top: 50px;
 }
 
-.container-fluid {
+.container-fluid--spacer {
   padding-top: 30px;
   padding-bottom: 30px;
 }
