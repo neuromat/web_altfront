@@ -76,6 +76,9 @@ $mq-large-screens: "only screen and (min-width : 1824px)";
         nav{
             width: 70%;
             margin-right: 160px;
+            @media #{$mq-desktops-laptops}{
+                width: 75%; 
+            }                 
             ul{
                 list-style: none;
                 width: 100%;
@@ -375,6 +378,9 @@ $mq-large-screens: "only screen and (min-width : 1824px)";
         font-size: 1.2em;
         line-height: 17pt;
         height: 60px;
+        @media #{$mq-desktops-laptops}{
+            font-size: 1.1em;
+        }             
 
     }
     p{

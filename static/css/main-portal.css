@@ -56,6 +56,11 @@ h1, h2, h3, h4, h5, p, span, a {
   width: 70%;
   margin-right: 160px;
 }
+@media only screen and (min-width : 1224px) and (max-width: 1824px) {
+  .app-portal header nav {
+    width: 75%;
+  }
+}
 .app-portal header nav ul {
   list-style: none;
   width: 100%;
@@ -344,6 +349,11 @@ h1, h2, h3, h4, h5, p, span, a {
   font-size: 1.2em;
   line-height: 17pt;
   height: 60px;
+}
+@media only screen and (min-width : 1224px) and (max-width: 1824px) {
+  .post-item .post-title {
+    font-size: 1.1em;
+  }
 }
 .post-item p {
   line-height: 17pt;
