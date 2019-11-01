@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 * {
+  outline: none;
   font-family: sans-serif;
   box-sizing: border-box;
 }
@@ -56,12 +57,21 @@ h1, h2, h3, h4, h5, p, span, a, button {
   }
 }
 .app-portal header .logo {
-  width: 200px;
+  width: 320px;
   height: 80px;
   font-size: 2.5em;
   font-weight: bold;
   display: flex;
   align-items: center;
+  position: relative;
+}
+.app-portal header .logo small {
+  font-size: 0.35em;
+  font-weight: normal;
+  line-height: 12pt;
+  padding-left: 8px;
+  margin-left: 9px;
+  border-left: 1px solid #333;
 }
 .app-portal header nav {
   width: 70%;
@@ -96,6 +106,9 @@ h1, h2, h3, h4, h5, p, span, a, button {
 }
 .app-portal header nav ul li.social-media-link a:hover {
   color: #12587a;
+}
+.app-portal header nav ul li.language-link:hover {
+  border: 1px solid transparent;
 }
 .app-portal header nav ul li {
   margin-right: 15px;
@@ -248,8 +261,9 @@ h1, h2, h3, h4, h5, p, span, a, button {
   align-items: center;
   width: 100%;
   height: 300px;
-  padding: 10px;
+  padding: 20px;
   background: black;
+  position: relative;
 }
 .promo-banner .promo-item .description h2 {
   color: white;
@@ -264,10 +278,12 @@ h1, h2, h3, h4, h5, p, span, a, button {
   line-height: 17pt;
   font-size: 0.9em;
 }
-.promo-banner .promo-item .description button {
-  margin-top: 30px;
+@media only screen and (min-width : 1824px) {
+  .promo-banner .promo-item .description p {
+    height: 180px;
+  }
 }
-.promo-banner button, .promo-banner a {
+.promo-banner .promo-item .description button, .promo-banner .promo-item .description a {
   border: none;
   text-decoration: none;
   padding: 8px;
@@ -276,12 +292,12 @@ h1, h2, h3, h4, h5, p, span, a, button {
   text-align: center;
   border-radius: 3px;
   font-size: 1em;
-  background: #069;
-  color: white;
+  background: #f3f3f3;
+  color: #333;
   cursor: pointer;
 }
-.promo-banner button:hover, .promo-banner a:hover {
-  background: #133c94;
+.promo-banner .promo-item .description button:hover, .promo-banner .promo-item .description a:hover {
+  background: #669966;
   color: white;
 }
 
@@ -333,7 +349,9 @@ h1, h2, h3, h4, h5, p, span, a, button {
   width: 100px;
   height: 50px;
   flex-grow: 0;
-  background: white;
+  background: #f3f3f3;
+  border: 1px solid #ccc;
+  border-left: none;
   cursor: pointer;
 }
 @media only screen and (min-width : 320px) and (max-width : 1024px) {
@@ -342,7 +360,7 @@ h1, h2, h3, h4, h5, p, span, a, button {
   }
 }
 .search-box button:hover {
-  background: #2dc450;
+  background: #669966;
   color: white;
 }
 
@@ -462,22 +480,40 @@ h1, h2, h3, h4, h5, p, span, a, button {
 .newsletter-lead {
   margin-top: 40px;
 }
-.newsletter-lead input {
+.newsletter-lead .newsletter-lead-row {
+  display: flex;
+  align-items: center;
+}
+.newsletter-lead .newsletter-lead-row input {
   border: 1px solid #ccc;
   border-radius: 3px;
   width: 70%;
   height: 35px;
-  padding: 4px 6px;
+  padding: 6px;
   font-size: 1em;
+  margin-right: 4px;
+  transition: all ease 0.4s;
 }
 @media only screen and (min-width : 320px) and (max-width : 1024px) {
-  .newsletter-lead input {
+  .newsletter-lead .newsletter-lead-row input {
     width: 65%;
   }
 }
-.newsletter-lead button {
+.newsletter-lead .newsletter-lead-row input:focus {
+  background: #fafabf;
+}
+.newsletter-lead .newsletter-lead-row button {
   width: 100px;
-  height: 34px;
+  height: 35px;
+  background: #f3f3f3;
+  border: 1px solid #ccc;
+  font-size: 0.9em;
+  border-radius: 3px;
+}
+.newsletter-lead .newsletter-lead-row button:hover {
+  background: #669966;
+  border: 1px solid #669966;
+  color: white;
 }
 
 .youtube-box {
@@ -511,7 +547,7 @@ h1, h2, h3, h4, h5, p, span, a, button {
   list-style: none;
 }
 .last-events ul li {
-  padding: 6px 8px;
+  padding: 8px;
   border: 1px solid #f3f3f3;
 }
 .last-events ul li a {
@@ -524,10 +560,14 @@ h1, h2, h3, h4, h5, p, span, a, button {
 .last-events ul li .title {
   margin-top: 0px;
   margin-bottom: 0px;
-  font-size: 1.1em;
+  font-size: 1em;
 }
 .last-events ul p {
   margin-top: 10px;
+}
+
+.no-padding-top {
+  padding-top: 0 !important;
 }
 
 @media only screen and (min-width : 320px) and (max-width : 1024px) {
